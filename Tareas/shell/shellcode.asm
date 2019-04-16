@@ -3,6 +3,11 @@
 ; Reverse Shell (asm)
 ; 14/Abril/2019
 
+; Este programa ejecuta un reverse shell local, entonces para poder obtener
+; la shell antes de ejecutar el binario debemos poner a escuchar una conexion
+; en el puerto 4444, esto lo podemos lograr con netcat con el siguiente comando
+; nc -lvp 4444
+
 section .text
 
   global _start ; Directiva [Punto de Entrada]

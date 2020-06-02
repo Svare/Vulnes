@@ -2,6 +2,10 @@
 
 ## Comandos Útiles
 
+    sudo apt install gcc-multilib
+    
+    dpkg --add-architecture i386
+
     name=shellcode
 
     gcc $name.c -o $name -no-pie -ggdb -m32 -fno-pic -z execstack -mpreferred-stack-boundary=2 -fno-stack-protector
